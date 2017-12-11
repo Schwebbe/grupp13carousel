@@ -124,3 +124,11 @@ form.login input[type=submit] {
     90%   { left: -10px; }
     100%  { left: 5px; }
 }
+.full-screen {
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
