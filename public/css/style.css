@@ -1,5 +1,6 @@
 body {
     background-color: #e8e8e8;
+    min-height: 100% !important;
 }
 
 .full-screen {
