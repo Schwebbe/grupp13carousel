@@ -1,11 +1,14 @@
 $(function() {
-    $("#test").swipe( {
-        //Generic swipe handler for all directions
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            $(this).text("You swiped " + direction );  
-        }
-    });
 
-    //Set some options later
-    $("#test").swipe( {fingers:2} );
+    $(".carousel").swipe({
+
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            if (direction == 'left') $(this).carousel('next');
+            if (direction == 'right') $(this).carousel('prev');
+
+        },
+        allowPageScroll:"vertical"
+
+    });
 });
